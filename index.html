@@ -16,41 +16,12 @@
         color: white;
       }
     </style>
-    <script>
-      function myFunc(id) {
-        const today = new Date();
-        const int_d = new Date(today.getFullYear(), today.getMonth() + 1, 1);
-        const d = new Date(int_d - 1);
-
-        const lastDayOfMonth =
-          d.getFullYear() +
-          "-" +
-          (d.getMonth() + 1).toString() +
-          "-" +
-          d.getDate();
-
-        const firstDayOfMonth =
-          d.getFullYear() + "-" + (d.getMonth() + 1).toString() + "-01";
-
-        const url =
-          "https://project.comwrap.com/jira/secure/ProjectPivotReport.jspa?reportKey=jira-timesheet-plugin%3Aprojectpivot&startDate=" +
-          firstDayOfMonth +
-          "&endDate=" +
-          lastDayOfMonth +
-          "&projectid=" +
-          id +
-          "&filterid=&commentfirstword=&groupByField=&Next=Next";
-
-        //console.log(url)
-        window.location.href = url;
-      }
-    </script>
   </head>
+
   <body>
     <div>
-      <h1 onclick="myFunc(13707)">CORSUP</h1>
-      <h1 onclick="myFunc(13708)">CORHIS</h1>
-      <h1 onclick="myFunc(13903)">CORINV</h1>
+      <h1>Well hello there!</h1>
+      <img src="https://media2.giphy.com/media/l2SqduDsHyJ9oxyVi/giphy.gif" />
     </div>
   </body>
 </html>
